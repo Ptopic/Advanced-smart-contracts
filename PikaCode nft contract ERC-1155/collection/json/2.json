@@ -1,0 +1,19 @@
+{
+	"name": "PikaCode #2",
+	"description": "Pikachu coder",
+	"image": "ipfs://QmUodap1ahWyh4fCyooxWjWXff521EtDVsKb44nYJYnUBe/2.png",
+	"attributes": [
+		{
+			"trait_type": "Solidity skills",
+			"value": "55"
+		},
+		{
+			"trait_type": "Coding speed",
+			"value": "45"
+		},
+		{
+			"trait_type": "sleepiness",
+			"value": "60"
+		}
+	]
+}
