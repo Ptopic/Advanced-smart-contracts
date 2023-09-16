@@ -29,7 +29,7 @@ if (!window.Buffer) {
 const { chains, publicClient, webSocketPublicClient } = configureChains(
 	[mainnet],
 	[
-		alchemyProvider({ apiKey: 'oQPsBXfNrqza9s5LR-Vc5Axhsr3aiNsP' }),
+		alchemyProvider({ apiKey: import.meta.env.VITE_ALCHEMY_KEY }),
 		publicProvider(),
 	]
 );
@@ -43,14 +43,15 @@ const config = createConfig({
 			chains,
 			options: {
 				appName: 'wagmi',
-				jsonRpcUrl:
-					'https://eth-mainnet.alchemyapi.io/v2/oQPsBXfNrqza9s5LR-Vc5Axhsr3aiNsP',
+				jsonRpcUrl: `https://eth-mainnet.alchemyapi.io/v2/${
+					import.meta.env.VITE_ALCHEMY_KEY
+				}`,
 			},
 		}),
 		new WalletConnectConnector({
 			chains,
 			options: {
-				projectId: '20f5acd47ffb19c8ccf0f0ddd17b0739',
+				projectId: import.meta.env.VITE_WALLET_CONNECT,
 			},
 		}),
 	],
