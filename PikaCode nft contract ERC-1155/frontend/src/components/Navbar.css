@@ -1,0 +1,79 @@
+.navbar {
+    height: 10dvh;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem var(--padding);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -1px 10px rgba(20, 126, 251, 0.5);
+}
+
+.navbar-left h1 {
+    font-family: "gilroy-bold", sans-serif;
+    color: var(--primary600);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-right ul>li {
+    padding-right: 2.4rem;
+}
+
+.navbar-right ul>li>a {
+    text-decoration: none;
+    color: var(--primary600);
+}
+
+.navbar-right ul>li>a:hover {
+    color: var(--secondary);
+}
+
+.navbar-right ul>button {
+    border: none;
+    outline: none;
+    background-color: var(--primary600);
+    color: var(--bg500);
+    padding: 1rem 2.4rem;
+    font-size: 1.8rem;
+}
+
+.navbar-right ul>button:hover {
+    background: var(--primary500);
+}
+
+.disconnect-container {
+    display: flex;
+    align-items: center;
+}
+
+.disconnect-container div {
+    padding-right: 1rem;
+}
+
+.disconnect-container button {
+    border: none;
+    outline: none;
+    background-color: var(--primary600);
+    color: var(--bg500);
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+}
+
+.disconnect-container button:hover {
+    background: var(--primary500);
+}

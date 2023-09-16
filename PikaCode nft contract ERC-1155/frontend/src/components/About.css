@@ -1,0 +1,60 @@
+.about {
+    font-size: 1.8rem;
+    padding: 6rem var(--padding);
+}
+
+.about section {
+    padding: 2rem 1rem;
+    box-shadow: 0 0px 5px rgba(20, 126, 251, 0.2);
+    border-radius: 1.2rem;
+    margin: 0 0 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about section h1 {
+    padding-bottom: 3rem;
+}
+
+.about section p:last-of-type {
+    margin-bottom: 3rem;
+}
+
+.badge {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    box-shadow: 0 0px 5px rgba(20, 126, 251, 0.5);
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+.design-container-item img {
+    padding-right: 2rem;
+}
+
+.design-container-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.minting-container a {
+    border: none;
+    outline: none;
+    background-color: var(--primary600);
+    color: var(--bg500);
+    padding: 1rem 2.4rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.minting-container a:hover {
+    background: var(--primary500);
+}

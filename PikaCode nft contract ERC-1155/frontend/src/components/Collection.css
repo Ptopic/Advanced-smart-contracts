@@ -1,0 +1,138 @@
+.collection-container {
+    padding: 14dvh var(--padding);
+}
+
+.collection-container h1 {
+    font-size: 6rem;
+}
+
+.img-container p {
+    display: none;
+    position: relative;
+    top: -55px;
+    left: 0px;
+    padding-top: .4rem;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.nfts-container {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: -1.5rem;
+}
+
+.nft {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    /* align-items: center; */
+}
+
+.nft:hover {
+    background: var(--primary600);
+}
+
+.nft:hover .img-container p {
+    display: block;
+}
+
+.nft:hover p {
+    color: white;
+}
+
+.nft:hover .nft-content {
+    position: relative;
+    top: -40px;
+    height: 0;
+}
+
+.nft:hover .price-container p {
+    color: var(--gray);
+}
+
+.nft:hover .price-container h2 {
+    color: var(--bg500);
+}
+
+.nft img {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-radius: .6rem;
+}
+
+.seperator {
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+    opacity: 0.4;
+    margin: 1rem 0;
+}
+
+.buy-icon-container {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    background: var(--secondary);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.buy-modal-container {
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+}
+
+.buy-modal {
+    position: absolute;
+    background: white;
+    z-index: 200;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 4rem var(--padding);
+}
+
+.buy-modal h1 {
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+}
+
+.buy-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-modal label {
+    padding-bottom: 1.2rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary500);
+}
+
+.buy-modal input {
+    width: 30%;
+    border: 2px solid var(--primary500);
+    font-size: 1.8rem;
+    outline: none;
+    box-shadow: 0 0px 10px rgba(20, 126, 251, 0.2);
+    margin-bottom: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0 var(--padding);
+}

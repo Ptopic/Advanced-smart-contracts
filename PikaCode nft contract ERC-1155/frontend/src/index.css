@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+@font-face {
+  font-family: "gilroy";
+  src:
+    url("./assets/fonts/Gilroy-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gilroy-bold";
+  src:
+    url("./assets/fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+:root {
+  --bg500: #FFFFFF;
+  --bg600: #F5F8FB;
+  --bg700: #D8DEE2;
+  --primary500: #3D5A72;
+  --primary600: #173A56;
+  --secondary: #1B005D;
+  --padding: 20rem;
+  --card: #202025;
+  --gray: #818485;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-family: "gilroy-bold", sans-serif;
+  color: var(--primary600);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-family: "gilroy-bold", sans-serif;
+  color: var(--primary500);
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary500);
+}
+
+.connect-btn {
+  border: none;
+  outline: none;
+  background-color: var(--primary600);
+  color: var(--bg500);
+  padding: 1rem 2.4rem;
+  font-size: 1.8rem;
+}
+
+.connect-btn:hover {
+  background: var(--primary500);
+}
