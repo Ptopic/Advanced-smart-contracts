@@ -1,5 +1,7 @@
 ## PikaCode NFT Collection - ERC-1155 Smart Contract
 
+[LIVE Demo](https://pikacode.netlify.app/)
+
 ### Frontend - made with react
 
 Home page
