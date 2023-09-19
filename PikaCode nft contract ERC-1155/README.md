@@ -2,10 +2,13 @@
 
 ### Frontend - made with react
 
+Home page
 ![Home page](https://github.com/Ptopic/Advanced-smart-contracts/assets/45322112/fa9a468f-6ccf-44d9-8530-022b3a702e95)
 
+Nfts collection page
 ![NFT Collection page](https://github.com/Ptopic/Advanced-smart-contracts/assets/45322112/658e40d8-dcb1-4464-9aff-d08ea56dbf75)
 
+Single NFT mint page
 ![Single nft mint page](https://github.com/Ptopic/Advanced-smart-contracts/assets/45322112/505074ec-79ef-4255-86d0-4e2141d294f8)
 
 ### OpenSea collection
