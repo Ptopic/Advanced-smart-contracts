@@ -58,3 +58,13 @@
 .minting-container a:hover {
     background: var(--primary500);
 }
+
+/* ---------- Media querys ---------- */
+
+/* Phone */
+
+@media (max-width: 650px) {
+    .about {
+        padding: 6rem var(--padding-mobile);
+    }
+}

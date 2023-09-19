@@ -2,6 +2,7 @@
     height: 10dvh;
     font-size: 1.8rem;
     display: flex;
+    z-index: 1000;
     align-items: center;
     justify-content: space-between;
     padding: 1rem var(--padding);
@@ -76,4 +77,114 @@
 
 .disconnect-container button:hover {
     background: var(--primary500);
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.disconnect-container-mobile {
+    display: none;
+}
+
+/* ---------- Media querys ---------- */
+
+/* Phone */
+
+@media (max-width: 650px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 2rem var(--padding-mobile);
+        box-shadow: 0 -1px 10px rgba(20, 126, 251, 0.5);
+    }
+
+    .navbar-mobile h1 {
+        font-size: 2.6rem;
+    }
+
+    .toggle-btn {
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        outline: none;
+        padding: var(--padding-mobile);
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar-mobile-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: var(--bg500);
+        height: 100dvh;
+        width: 100%;
+    }
+
+    .navbar-mobile-content ul {
+        display: flex;
+        height: 100dvh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .navbar-mobile-content ul>li {
+        font-size: 2.4rem;
+        padding-bottom: 3rem;
+    }
+
+    .navbar-mobile-content ul>li>a {
+        text-decoration: none;
+        color: var(--primary600);
+    }
+
+    .disconnect-container {
+        display: none;
+    }
+
+    .disconnect-container-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .disconnect-container-mobile div {
+        padding-bottom: 1rem;
+        color: var(--secondary);
+    }
+
+    .disconnect-container-mobile button {
+        border: none;
+        outline: none;
+        background-color: var(--primary600);
+        color: var(--bg500);
+        padding: 1rem 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .disconnect-container-mobile button:hover {
+        background: var(--primary500);
+    }
 }

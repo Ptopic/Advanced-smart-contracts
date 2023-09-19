@@ -1,5 +1,6 @@
 .connect-modal-container {
     position: absolute;
+    z-index: 200;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,7 +12,9 @@
 }
 
 .connect-modal {
+    backface-visibility: hidden;
     display: flex;
+    position: relative;
     flex-direction: column;
     background: white;
     padding: 2rem 6rem;

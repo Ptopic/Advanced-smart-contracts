@@ -1,7 +1,7 @@
 {
 	"name": "PikaCode #2",
 	"description": "Pikachu coder",
-	"image": "ipfs://QmUodap1ahWyh4fCyooxWjWXff521EtDVsKb44nYJYnUBe/2.png",
+	"image": "https://ipfs.io/ipfs/QmUodap1ahWyh4fCyooxWjWXff521EtDVsKb44nYJYnUBe/2.png",
 	"attributes": [
 		{
 			"trait_type": "Solidity skills",

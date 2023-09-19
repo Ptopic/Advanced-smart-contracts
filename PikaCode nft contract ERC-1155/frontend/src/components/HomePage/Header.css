@@ -12,7 +12,7 @@
     width: 50%;
 }
 
-.main-header-left img {
+.main-header-left-image img {
     width: 100%;
     box-shadow: 0 0 10px rgba(20, 126, 251, 0.5);
     border-radius: 2rem;
@@ -46,4 +46,27 @@
 
 .main-header-right a:hover {
     background: var(--primary500);
+}
+
+/* ---------- Media querys ---------- */
+
+/* Phone */
+
+@media (max-width: 650px) {
+    .main-header {
+        display: grid;
+        gap: 4rem;
+        grid-template-rows: 1fr 1fr;
+        height: 120dvh;
+        padding: 2rem var(--padding-mobile);
+    }
+
+    .main-header-left {
+        width: 100%;
+        grid-row: 2/2;
+    }
+
+    .main-header-right {
+        width: 100%;
+    }
 }

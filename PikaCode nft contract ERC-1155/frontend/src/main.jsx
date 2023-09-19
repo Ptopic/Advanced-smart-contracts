@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { Buffer } from 'buffer';
 import CollectionPage from './pages/CollectionPage.jsx';
+import NftPage from './pages/NftPage.jsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
 	{
 		path: '/collection',
 		element: <CollectionPage />,
+	},
+	{
+		path: 'token/:tokenId',
+		element: <NftPage />,
 	},
 ]);
 

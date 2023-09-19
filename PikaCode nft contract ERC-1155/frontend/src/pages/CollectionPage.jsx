@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 // Components
 import Navbar from '../components/Navbar';
-import Collection from '../components/Collection';
+import Collection from '../components/CollectionPage/Collection';
 
 import { useAccount } from 'wagmi';
 
@@ -15,7 +15,7 @@ function CollectionPage() {
 	const [account, setAccount] = useState();
 	const { address, connector, isConnected } = useAccount();
 
-	const contractAddress = '0x7e5dc85B83b08adFBcaA0C4076cD30Cc9832fbf2';
+	const contractAddress = '0xe3CDBA1520ceE1a6214b34f724c66263720ab020';
 	const connectToContract = async () => {
 		try {
 			let web3 = new Web3(window.ethereum);

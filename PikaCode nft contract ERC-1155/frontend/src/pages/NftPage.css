@@ -1,0 +1,167 @@
+.item-container {
+    padding: 15dvh var(--padding);
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 2.1fr;
+    gap: 5rem;
+}
+
+.amount-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+}
+
+.amount-container label {
+    font-family: "gilroy-bold", sans-serif;
+    padding-bottom: .4rem;
+    color: var(--primary600);
+}
+
+.amount-container input {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--primary600);
+}
+
+.amount-container input:focus {
+    border: 2px solid var(--primary600);
+    outline: none;
+}
+
+.amount-container input::placeholder {
+    color: var(--gray);
+}
+
+.item-container-left {
+    width: 100%;
+}
+
+.item-container-left img {
+    width: 100%;
+    position: sticky;
+    top: 15dvh;
+    left: 0;
+}
+
+.item-container-right .team {
+    padding-bottom: 1.4rem;
+}
+
+.item-container-right .description {
+    padding-bottom: 1.2rem;
+}
+
+.item-container-right h1 {
+    padding-bottom: 0.6rem;
+}
+
+.list-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.eth-price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.eth-price h3 {
+    color: var(--primary600);
+}
+
+.eth-price button {
+    border: none;
+    outline: none;
+    background-color: var(--primary600);
+    color: var(--bg500);
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.eth-price button:hover {
+    background: var(--primary500);
+}
+
+.eth-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.best-offer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.best-offer h3 {
+    color: var(--primary600);
+}
+
+.best-offer button {
+    border: 1.5px solid var(--primary600);
+    outline: none;
+    color: var(--primary600);
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.traits-container h2 {
+    padding-bottom: 1.2rem;
+}
+
+.traits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.trait {
+    border: 2px solid var(--primary600);
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+
+.trait-name {
+    color: var(--gray);
+    font-size: 1.4rem;
+}
+
+.trait-value {
+    font-size: 2.2rem;
+    font-family: "gilroy-bold", sans-serif;
+    color: var(--primary600);
+}
+
+/* ---------- Media querys ---------- */
+
+/* Phone */
+
+@media (max-width: 650px) {
+    .item-container {
+        padding: 2rem var(--padding-mobile);
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        max-width: 100%;
+    }
+
+    .item-container-left img {
+        max-width: 100%;
+    }
+
+    .amount-container {
+        width: 100%;
+    }
+
+}

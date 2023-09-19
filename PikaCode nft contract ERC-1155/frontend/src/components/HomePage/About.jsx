@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import solidityLogo from '../assets/images/solidity.png';
+import solidityLogo from '../../assets/images/solidity.png';
 import { Link } from 'react-router-dom';
 
 function About() {

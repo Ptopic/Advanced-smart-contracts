@@ -19,9 +19,10 @@
   --primary500: #3D5A72;
   --primary600: #173A56;
   --secondary: #1B005D;
-  --padding: 20rem;
   --card: #202025;
   --gray: #818485;
+  --padding: 20rem;
+  --padding-mobile: 2.4rem;
 }
 
 * {
@@ -66,4 +67,49 @@ p {
 
 .connect-btn:hover {
   background: var(--primary500);
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 4px solid var(--primary500);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-left-color: var(--primary600);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Media querys ---------- */
+
+/* Phone */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.8rem;
+    font-family: "gilroy-bold", sans-serif;
+    color: var(--primary600);
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    font-family: "gilroy-bold", sans-serif;
+    color: var(--primary500);
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary500);
+  }
 }

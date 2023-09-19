@@ -19,7 +19,6 @@
 
 .nfts-container {
     width: 100%;
-    overflow: hidden;
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,6 +31,10 @@
     padding: 1.5rem;
     border-radius: 1.2rem;
     /* align-items: center; */
+}
+
+.nft a {
+    text-decoration: none;
 }
 
 .nft:hover {
@@ -74,65 +77,30 @@
     margin: 1rem 0;
 }
 
-.buy-icon-container {
-    position: absolute;
-    right: 4rem;
-    bottom: 4rem;
-    background: var(--secondary);
-    padding: 1rem;
-    border-radius: 50%;
-}
+/* ---------- Media querys ---------- */
 
-.buy-modal-container {
-    width: 100%;
-    height: 100dvh;
-    position: absolute;
-    z-index: 5;
-    background: rgba(0, 0, 0, 0.4);
-    top: 0;
-    left: 0;
-}
+/* Phone */
 
-.buy-modal {
-    position: absolute;
-    background: white;
-    z-index: 200;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    padding: 4rem var(--padding);
-}
+@media (max-width: 650px) {
+    .collection-container {
+        padding: 4rem var(--padding-mobile);
+    }
 
-.buy-modal h1 {
-    font-size: 2.8rem;
-    padding-bottom: 2rem;
-}
+    .nfts-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+        gap: 6rem;
+    }
 
-.buy-modal form {
-    display: flex;
-    flex-direction: column;
-}
+    .nft:hover {
+        height: 100%;
+    }
 
-.buy-modal label {
-    padding-bottom: 1.2rem;
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary500);
-}
-
-.buy-modal input {
-    width: 30%;
-    border: 2px solid var(--primary500);
-    font-size: 1.8rem;
-    outline: none;
-    box-shadow: 0 0px 10px rgba(20, 126, 251, 0.2);
-    margin-bottom: 1.2rem;
-    padding: 1rem 2rem;
-}
-
-.close-btn {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    padding: 0 var(--padding);
+    .nft:hover .nft-content {
+        position: relative;
+        top: -40px;
+        left: 0;
+        height: 60px;
+    }
 }
